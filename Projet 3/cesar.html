@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cesar.css">
+    <title>Cesar</title>
+</head>
+<body>
+    
+    <header>
+    <h1> Retro Game </h1>
+    
+    <nav class="container curseur cercle">
+       <a href="home.html">Accueil</a>
+        <a>Member</a>
+        <a>Task</a>
+        <a id="Game" href="game.html">Game</a>
+        <a>About</a>
+    </nav>
+    </header>
+
+    <div id="bloc">
+        <h1>Chiffre de César</h1>
+    
+        <div class="parent">
+
+            <div class="enfant1">
+                <img src="img/icons8-circled-play-100.png" alt="">
+            </div>
+
+            <div class="enfant2">
+                <main>
+                    <div class="conteneur-grid">
+                        <input type="text" id="conteneur1">
+                        <input type="button" class="btn btn-info" onclick="Chiffrer();" value="Convert">
+                        <div class="conteneur2">
+                            <article class="decalage">
+                                <p>Nombre de décalage:</p>
+                                <button class="plus">+</button>
+                                <button class="moins">-</button>
+                            </article>
+                        </div>
+                        <area type="text" id="conteneur3">
+                        <input type="button" class="btn btn-info" value="Déchiffrer">
+                      </div>
+                </main>
+            </div>
+            
+            <button class="clear" type="button">
+                Clear
+            </button>
+            
+        </div>
+        
+    </div>
+<script src="cesar.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-size: small;
+    text-shadow: 1px 1px 0 rgb(0 0 0);
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+main > article {
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+    box-shadow: 0 0 10px 1px grey;
+}
+main {
+    padding: 20px;
+    width: 26%;
+    margin: auto;
+}
+
+article {
+    padding: 2em;
+    box-sizing: border-box; /* Le padding est inclu dans la dimension de la balise */
+}
+
+/*   JEU SIMON   */
+.jeu_simon{
+    background-image:url(img/simon.jfif);
+    background-size: cover;
+    background-position-y: center;
+    height: 20vh;
+    width: 22vh;
+    transition: transform .0s; /* Animation: determiner pendant combien de seconde lanimation s'éxecutera*/
+}
+
+.jeu_simon:hover {
+    transform: scale(1.5); /*echelle taille lors du suvole de lélément */
+    box-shadow: 0px 0px 10px 5px rgb(245, 53, 245);
+  }
+
+/*   JEU CESAR   */
+.jeu_cesar{
+    background-image:url(img/code-secret.jpg);
+    background-size: cover;
+    background-position-y: center;
+    height: 20vh;
+    width: 22vh;
+    transition: transform .0s; /* Animation */
+}
+
+.jeu_cesar:hover {
+    transform: scale(1.5); 
+    box-shadow: 0px 0px 10px 5px rgb(245, 53, 245);
+  }
+
+/*   JEU MASTER_MIND   */
+.jeu_master_mind{
+    background-image:url(img/mastermind.jpg);
+    background-size: cover;
+    background-position-y: center;
+    height: 20vh;
+    width: 22vh;
+    transition: transform .0s; /* Animation */
+}
+
+.jeu_master_mind:hover {
+    transform: scale(1.5); 
+    box-shadow: 0px 0px 10px 5px rgb(245, 53, 245);
+  }
+
+
+/*   JEU JUSTE_PRIX   */
+.jeu_bonus{
+    background-image:url(img/point.png);
+    background-size: cover;
+    background-position-y: center;
+    height: 20vh;
+    width: 22vh;
+    transition: transform .0s; /* Animation */
+}
+
+.jeu_bonus:hover {
+    transform: scale(1.5); 
+    box-shadow: 0px 0px 10px 5px rgb(245, 53, 245);
+  }

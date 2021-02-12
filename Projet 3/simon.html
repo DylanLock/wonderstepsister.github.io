@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="simon.css">
+    <title>Jeu du Simon</title>
+</head>
+<body>
+
+    <header>
+        <nav class="container curseur cercle">
+          <ul class="navbar">
+            <li><a href="home1.html">Accueil</a></li>
+            <li><a href="game.html">Nos Jeux</a></li>
+          </ul>
+        </nav>
+      </header>  
+
+    <div id="parent">
+        <section class="gameContainer">
+            <button id="buttonGre"></button>
+            <audio id="audio1" src="son/Son_1.mp3" ></audio>
+            <button  id="buttonRed"></button>
+            <audio id="audio2" src="son/Son_2.mp3" ></audio>
+            <button id="buttonYel"></button>
+            <audio id="audio3" src="son/Son_3.mp3" ></audio>
+            <button  id="buttonBlu"></button>
+            <audio id="audio4" src="son/Son_4.mp3" ></audio>
+
+            <div id="center">
+                <h1>Simon</h1>
+                <label id="label" for="BoutonOn">On</label>
+                <input type="checkbox" name="BoutonOn" id="ButtonOn">
+                <input type="button" id="starter" value="Starter"><br>
+            </div>
+        </section>
+
+        <section class="compteur">
+            <h4 id="compteur"><a style="color: white; font-size: medium;" href="aideSimon.html" id="aide">Cliquer ici pour accéder à l'aide</a></h4>
+        </section>  
+    </div>
+    <script src="simon.js"></script>
+    
+</body>
+</html>

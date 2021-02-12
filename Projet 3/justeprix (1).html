@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="justeprix.css">
+    <title>Juste Prix</title>
+</head>
+<body>
+    <header>
+        <nav class="container curseur cercle">
+          <ul class="navbar">
+            <li><a href="home1.html">Accueil</a></li>
+            <li><a href="game.html">Nos Jeux</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <h1>Juste Prix </h1>
+
+    <div class="wrapper">
+        <div id="manche">
+            <h2>1er Manche: Tour Joueur</h2>
+            <img src="img/point.png" alt="">
+            <input id="Input_joueur" type="text" class="input">
+            <button type="submit" id="valider" class="valider">Valider</button><hr>
+            <p id="indice" class="indice"></p>
+            <p id="propo" style="display: none;">Propositions précédentes : <span id="result"></span> </p>
+            <p id="coup" class="coup"></p>
+            <p id="scorejoueur"></p>
+            <div>
+            <button type="submit" id="secondemanche" value="Lancer la seconde manche" style="display: none; width: 14em;" onclick="PlayGame2"> Lancer la seconde manche</button>
+            </div> 
+        </div>
+        <div id="manche2" style="display: none;">
+            <h2>2ème Manche:  Tour Ordinateur</h2>
+            <img src="img/point.png" alt="">
+            <section id="essaiordi"></section>
+            <button type="submit" id="plus" value="plus">+</button>
+            <button type="submit" id="moins" value="moins">-</button>
+            <button type="submit" id="ok" value="C'est le bon !">C'est le bon !</button>
+            <button type="submit" id="perdu" value="Perdue">Perdue!</button>
+
+            <p id="resultordi" class="input">L'ordinateur propose:</p>
+            <p id="coupordi" class="coup"></p>
+            <p id="scoreordi"></p>
+            <input type="submit" id="Resultat" value="Voir le Résultat" style="display: none;">
+        </div>
+
+        <button><a href="aidejusteprix.html" >Aide</a></button>
+
+    <script src="justeprix (1).js"></script>
+</body>
+</html>
